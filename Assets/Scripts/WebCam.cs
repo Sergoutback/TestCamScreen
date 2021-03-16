@@ -20,8 +20,15 @@ public class WebCam : MonoBehaviour
             {
                 currentCamIndex += 1;
                 currentCamIndex %= WebCamTexture.devices.Length;
-                swapText.text = "Back Camera";
-
+                if (currentCamIndex == 1)
+                {
+                    swapText.text = "Front Camera";
+                }
+                else
+                {                   
+                    swapText.text = "Back Cameraa";
+                }
+                
                 // if tex is not null:
                 // stop the web cam
                 // start the web cam
@@ -29,7 +36,7 @@ public class WebCam : MonoBehaviour
                 {
                     StopWebCam();
                     StartStopCam_Cliked();
-                    swapText.text = "Front Camera";
+                   
                 }
             }
         }
