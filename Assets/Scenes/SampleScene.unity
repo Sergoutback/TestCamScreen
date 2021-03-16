@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 276016394}
   - component: {fileID: 276016393}
   - component: {fileID: 276016392}
+  - component: {fileID: 276016395}
   m_Layer: 5
   m_Name: StartButton
   m_TagString: Untagged
@@ -202,7 +203,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 276016393}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 276016395}
+        m_MethodName: StartStopCam_Cliked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &276016393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,6 +252,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 276016390}
   m_CullTransparentMesh: 0
+--- !u!114 &276016395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276016390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e3fa31782be4574aa0c094527270c1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  display: {fileID: 2053862858}
+  startStopText: {fileID: 355059266}
+  swapText: {fileID: 0}
 --- !u!1 &347724878
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,8 +360,8 @@ RectTransform:
   - {fileID: 2053862857}
   - {fileID: 577754655}
   - {fileID: 276016391}
-  - {fileID: 1958527574}
   - {fileID: 1127446667}
+  - {fileID: 1958527574}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -355,7 +382,7 @@ GameObject:
   - component: {fileID: 355059267}
   - component: {fileID: 355059266}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Text1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -679,7 +706,7 @@ GameObject:
   - component: {fileID: 1127124645}
   - component: {fileID: 1127124644}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Text2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -757,8 +784,9 @@ GameObject:
   - component: {fileID: 1127446670}
   - component: {fileID: 1127446669}
   - component: {fileID: 1127446668}
+  - component: {fileID: 1127446671}
   m_Layer: 5
-  m_Name: ' CamButton'
+  m_Name: SwapButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -777,7 +805,7 @@ RectTransform:
   m_Children:
   - {fileID: 1127124643}
   m_Father: {fileID: 347724882}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -826,7 +854,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1127446669}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1127446671}
+        m_MethodName: SwapCam_Cliked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1127446669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -864,6 +903,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127446666}
   m_CullTransparentMesh: 0
+--- !u!114 &1127446671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127446666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e3fa31782be4574aa0c094527270c1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  display: {fileID: 2053862858}
+  startStopText: {fileID: 0}
+  swapText: {fileID: 1127124644}
 --- !u!1 &1399320562
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,7 +996,7 @@ GameObject:
   - component: {fileID: 1432745672}
   - component: {fileID: 1432745671}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Text3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1017,8 +1071,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1715705414}
+  - component: {fileID: 1715705415}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: WebCamGameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1038,6 +1093,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1715705415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715705413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e3fa31782be4574aa0c094527270c1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  display: {fileID: 2053862858}
+  startStopText: {fileID: 355059266}
+  swapText: {fileID: 1127124644}
 --- !u!1 &1958527573
 GameObject:
   m_ObjectHideFlags: 0
@@ -1070,7 +1140,7 @@ RectTransform:
   m_Children:
   - {fileID: 1432745670}
   m_Father: {fileID: 347724882}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

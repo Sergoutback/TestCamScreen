@@ -10,6 +10,7 @@ public class WebCam : MonoBehaviour
     WebCamTexture tex;
     public RawImage display;
     public Text startStopText;
+    public Text swapText;
 
     public void SwapCam_Cliked()
     {
@@ -19,6 +20,7 @@ public class WebCam : MonoBehaviour
             {
                 currentCamIndex += 1;
                 currentCamIndex %= WebCamTexture.devices.Length;
+                swapText.text = "Back Camera";
 
                 // if tex is not null:
                 // stop the web cam
@@ -27,6 +29,7 @@ public class WebCam : MonoBehaviour
                 {
                     StopWebCam();
                     StartStopCam_Cliked();
+                    swapText.text = "Front Camera";
                 }
             }
         }
@@ -38,10 +41,10 @@ public class WebCam : MonoBehaviour
         {
             StopWebCam();
             startStopText.text = "Start Camera";
-            // display.texture = null;
-            // tex.Stop();
-            // tex = null;
-            // startStopText.text = "Start Camera";
+            display.texture = null;
+            tex.Stop();
+            tex = null;
+            startStopText.text = "Start Camera";
         }
         else  // Start the camera
         {
