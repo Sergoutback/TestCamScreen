@@ -41,9 +41,9 @@ public class WebCam : MonoBehaviour
         {
             StopWebCam();
             startStopText.text = "Start Camera";
-            display.texture = null;
-            tex.Stop();
-            tex = null;
+            // display.texture = null;
+            // tex.Stop();
+            // tex = null;
             startStopText.text = "Start Camera";
         }
         else  // Start the camera
