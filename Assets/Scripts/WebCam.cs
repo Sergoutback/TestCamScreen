@@ -22,11 +22,11 @@ public class WebCam : MonoBehaviour
                 currentCamIndex %= WebCamTexture.devices.Length;
                 if (currentCamIndex == 1)
                 {
-                    swapText.text = "Front Camera";
+                    swapText.text = "Back Camera";
                 }
                 else
                 {                   
-                    swapText.text = "Back Cameraa";
+                    swapText.text = "Front Camera";
                 }
                 
                 // if tex is not null:

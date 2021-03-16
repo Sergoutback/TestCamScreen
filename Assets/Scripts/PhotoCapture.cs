@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PhotoCapture : MonoBehaviour
 {
     public Camera captureCamera;
+    // public RawImage displayScrenshot;
 
     public void MakeScrenshot()
     {
@@ -18,6 +19,6 @@ public class PhotoCapture : MonoBehaviour
         RenderTexture.active = targetTexture;
         Rect rect = new Rect(0, 0, width, height);
         texture.ReadPixels(rect, 0, 0);
-        texture.Apply();
+        texture.Apply();        
     }
 }
