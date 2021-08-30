@@ -22,5 +22,5 @@ public class PhotoCapture : MonoBehaviour
         texture.ReadPixels(rect, 0, 0);
         texture.Apply();   
         displayscreen.texture = targetTexture;
-    }
+        Debug.Log("MakeScrenshot()");    }
 }
