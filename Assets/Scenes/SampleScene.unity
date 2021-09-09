@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 33768109}
   - component: {fileID: 33768112}
   - component: {fileID: 33768111}
-  m_Layer: 5
+  m_Layer: 4
   m_Name: CameraScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.31510323, g: 0.46145263, b: 0.6886792, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -191,7 +191,7 @@ Camera:
   field of view: 60
   orthographic: 0
   orthographic size: 5
-  m_Depth: -1
+  m_Depth: -2
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faac2a1a312610d4b93a48d7548f588a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  captureCamera: {fileID: 963194227}
+  captureCamera: {fileID: 33768110}
   displayscreen: {fileID: 577754656}
 --- !u!1 &276016390
 GameObject:
@@ -909,8 +909,8 @@ Camera:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.5659633, g: 0.5849056, b: 0.26762193, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1398,6 +1398,7 @@ GameObject:
   - component: {fileID: 1958527577}
   - component: {fileID: 1958527576}
   - component: {fileID: 1958527575}
+  - component: {fileID: 1958527578}
   m_Layer: 5
   m_Name: ScreenButton
   m_TagString: Untagged
@@ -1468,7 +1469,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 963194229}
+      - m_Target: {fileID: 33768112}
         m_MethodName: MakeScrenshot
         m_Mode: 1
         m_Arguments:
@@ -1516,6 +1517,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958527573}
   m_CullTransparentMesh: 0
+--- !u!114 &1958527578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958527573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faac2a1a312610d4b93a48d7548f588a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  captureCamera: {fileID: 33768110}
+  displayscreen: {fileID: 577754656}
 --- !u!1 &2053862856
 GameObject:
   m_ObjectHideFlags: 0
