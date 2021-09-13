@@ -26,7 +26,7 @@ public class ScreenShot : MonoBehaviour
         texture.ReadPixels(new Rect(Screen.width / 4, Screen.height / 3, Screen.width / 2, Screen.height / 2), 0, 0);
         texture.Apply();
         
-        string name = "Screenshot_YouAreBeauty" + System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss") + ".png";
+        string name = "Screenshot_YouAreBeauty_" + System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss") + ".png";
 
         //PC
         //byte[] bytes = texture.EncodeToPNG();
