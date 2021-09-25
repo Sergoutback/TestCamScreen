@@ -170,8 +170,9 @@ public static class NativeGallery
 	// The only downside of having PermissionFreeMode = true is that, on iOS 14+, images/videos will be saved to the default Photos album rather than the
 	// provided custom album
 	private const bool PermissionFreeMode = true;
+    public static object LoadFromGallery;
 
-	public static Permission CheckPermission( PermissionType permissionType )
+    public static Permission CheckPermission( PermissionType permissionType )
 	{
 #if !UNITY_EDITOR && UNITY_ANDROID
 		Permission result = (Permission) AJC.CallStatic<int>( "CheckPermission", Context, permissionType == PermissionType.Read );
