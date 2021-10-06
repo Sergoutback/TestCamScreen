@@ -6,11 +6,11 @@ using UnityEngine.InputSystem;
 
 public class ScreenShotNG : MonoBehaviour
 {
-	//public RawImage displayScreeenShot;
-	//public Texture permission;
-	//public GameObject quad;
+    public RawImage displayScreeenShot;
+    public Texture permission;
+    public GameObject quad;
 
-	public void ScreenshotAndSave()
+    public void ScreenshotAndSave()
 	{
         // Take a screenshot and save it to Gallery/Photos
         StartCoroutine(TakeScreenshotAndSave());
