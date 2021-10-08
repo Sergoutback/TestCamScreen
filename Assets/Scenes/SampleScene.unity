@@ -556,8 +556,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayScreeenShot: {fileID: 577754656}
-  permission: {fileID: 0}
-  quad: {fileID: 568449203}
+  permission: {fileID: 2800000, guid: ce5ebecd4d7a345df86f06d5730f1156, type: 3}
+  quad: {fileID: 577754654}
 --- !u!1 &577699042
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,8 +645,8 @@ GameObject:
   - component: {fileID: 577754657}
   - component: {fileID: 577754656}
   - component: {fileID: 577754659}
-  - component: {fileID: 577754658}
   - component: {fileID: 577754660}
+  - component: {fileID: 577754658}
   m_Layer: 5
   m_Name: RawImageScreenshot
   m_TagString: Untagged
@@ -717,11 +717,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 577754654}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd7a56e1c25104743a36d91d08bb0e3c, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a0bb3f20f1fa384e9773eda0a9a96db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UI: {fileID: 568449203}
-  screenShot: {fileID: 577754656}
+  displayScreeenShot: {fileID: 577754656}
+  permission: {fileID: 0}
+  quad: {fileID: 568449203}
 --- !u!114 &577754659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -739,22 +740,10 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 568449205}
-          m_TargetAssemblyTypeName: ScreenShotNG, Assembly-CSharp
-          m_MethodName: PickImage
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 800
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 577754660}
-          m_TargetAssemblyTypeName: ScreenShotNG, Assembly-CSharp
-          m_MethodName: PickImage
-          m_Mode: 3
+          m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
+          m_MethodName: LoadScene1
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -772,12 +761,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 577754654}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a0bb3f20f1fa384e9773eda0a9a96db, type: 3}
+  m_Script: {fileID: 11500000, guid: 11494d227b1a017438e3dd6ad8d9eb6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayScreeenShot: {fileID: 577754656}
-  permission: {fileID: 0}
-  quad: {fileID: 568449203}
 --- !u!1 &679320291
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,6 +1860,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 577754658}
+        m_TargetAssemblyTypeName: ScreenShotNG, Assembly-CSharp
+        m_MethodName: PickImage
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 800
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1958527576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1926,7 +1924,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayScreeenShot: {fileID: 577754656}
   permission: {fileID: 0}
-  quad: {fileID: 568449203}
+  quad: {fileID: 577754654}
 --- !u!1 &2053862856
 GameObject:
   m_ObjectHideFlags: 0
@@ -2030,6 +2028,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a0bb3f20f1fa384e9773eda0a9a96db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayScreeenShot: {fileID: 0}
+  displayScreeenShot: {fileID: 577754656}
   permission: {fileID: 0}
-  quad: {fileID: 0}
+  quad: {fileID: 568449203}
