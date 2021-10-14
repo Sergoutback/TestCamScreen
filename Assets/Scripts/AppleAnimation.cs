@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class AppleAnimation : MonoBehaviour
 {
-    public void Update()
+    void Start()
+    {
+        GetComponent<Animation>().Play("AppleAnimation");
+    }
+
+    void Update()
     {
         GetComponent<Animation>().Play("AppleAnimation");
     }
