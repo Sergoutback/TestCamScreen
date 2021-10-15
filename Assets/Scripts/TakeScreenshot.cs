@@ -1,12 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TakeScreenshot : MonoBehaviour
 {
 
 	[SerializeField]
 	GameObject blink;
+
+	[SerializeField]
+	GameObject panel;
+	//GameObject LoadScene0Button;
+	//GameObject LoadGalleryButton;
+	//GameObject ScreenshotButton;
+
 
 	public void TakeAShot()
 	{
@@ -23,4 +31,10 @@ public class TakeScreenshot : MonoBehaviour
 		Instantiate(blink, new Vector2(0f, 0f), Quaternion.identity);
 	}
 
+
+	public void SwitchOffTransparent()
+	{
+		// swich off transparent before TakeAShot;
+		panel.GetComponent<Image>().color = new Color(0f, 0f, 0f, 0f);
+	}
 }
