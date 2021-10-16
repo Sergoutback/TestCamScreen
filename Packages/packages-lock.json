@@ -92,15 +92,6 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.unity.textmeshpro": {
-      "version": "3.0.6",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.ugui": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
     "com.unity.timeline": {
       "version": "1.4.8",
       "depth": 0,
@@ -182,13 +173,6 @@
         "com.unity.subsystemregistration": "1.0.6"
       },
       "url": "https://packages.unity.com"
-    },
-    "com.yasirkula.nativegallery": {
-      "version": "https://github.com/yasirkula/UnityNativeGallery.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "821b543c58d98aa90a4bc6d62e58ef23f04d85c5"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
