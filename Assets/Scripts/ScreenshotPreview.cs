@@ -18,7 +18,8 @@ public class ScreenshotPreview : MonoBehaviour
 		files = Directory.GetFiles(Application.persistentDataPath + "/", "*.png");
 		if (files.Length > 0)
 		{
-			GetPictureAndShowIt();
+			//GetPictureAndShowIt();
+			LastPicture();
 		}
 	}
 

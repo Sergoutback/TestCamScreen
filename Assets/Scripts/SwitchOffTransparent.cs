@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class SwitchOffTransparent : MonoBehaviour
 {
-	GameObject forOffGameObject;
+	public GameObject forOffGameObject;
 
 
 	public void TransparentOff()
