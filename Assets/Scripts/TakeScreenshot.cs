@@ -30,11 +30,4 @@ public class TakeScreenshot : MonoBehaviour
 		yield return new WaitForEndOfFrame();
 		Instantiate(blink, new Vector2(0f, 0f), Quaternion.identity);
 	}
-
-
-	public void SwitchOffTransparent()
-	{
-		// swich off transparent before TakeAShot;
-		panel.GetComponent<Image>().color = new Color(0f, 0f, 0f, 0f);
-	}
 }
