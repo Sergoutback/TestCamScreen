@@ -8,7 +8,7 @@ public class ScreenshotPreview : MonoBehaviour
 {
 
 	[SerializeField]
-	GameObject canvas;
+	GameObject screenshotImage;
 	string[] files = null;
 	int whichScreenShotIsShown = 0;
 
@@ -28,7 +28,7 @@ public class ScreenshotPreview : MonoBehaviour
 		Texture2D texture = GetScreenshotImage(pathToFile);
 		Sprite sp = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height),
 			new Vector2(0.5f, 0.5f));
-		canvas.GetComponent<Image> ().sprite = sp;
+		screenshotImage.GetComponent<Image> ().sprite = sp;
 	}
 
 	Texture2D GetScreenshotImage(string filePath)
