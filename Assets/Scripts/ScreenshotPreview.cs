@@ -65,4 +65,11 @@ public class ScreenshotPreview : MonoBehaviour
 			GetPictureAndShowIt();
 		}
 	}
+
+	public void LastPicture()
+	{
+        whichScreenShotIsShown = files.Length - 1;
+
+		GetPictureAndShowIt();
+    }
 }
